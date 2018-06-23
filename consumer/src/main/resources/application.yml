@@ -1,0 +1,16 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: consumer
+  datasource:
+      name: test
+      url: jdbc:mysql://39.106.63.206/testdb
+      username: root
+      password: MyNewPass4!
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
