@@ -18,7 +18,7 @@ public class HelloController {
 
     @RequestMapping(value = "/consumer-index",method = RequestMethod.GET)
     public String index(){
-        String producer = "PRODUCER/hello";
+        String producer = "http://PRODUCER/hello";
         return restTemplate.getForEntity(producer,String.class).getBody();
     }
 
